@@ -133,15 +133,8 @@ def readMsg( filename ):
 	readed = ''
 
 	for i in range( 0, size[ 1 ] ):
-		if end_of_msg in readed:
-			break
-
 		for j in range( 0, size[ 0 ] ):
-			if end_of_msg in readed:
-				break
-
 			for k in range( 3 ):
-				
 				if pixels[ j, i ][ k ] == 0:
 					res += "00"
 
